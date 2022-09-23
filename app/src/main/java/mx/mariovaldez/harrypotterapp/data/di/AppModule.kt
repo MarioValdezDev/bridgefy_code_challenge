@@ -21,7 +21,7 @@ import timber.log.Timber
 
 @Module
 @InstallIn(SingletonComponent::class)
-internal object NetworkModule {
+internal object AppModule {
 
     private const val READ_TIMEOUT: Long = 120
     private const val CONNECT_TIMEOUT: Long = 120
