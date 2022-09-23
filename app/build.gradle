@@ -9,6 +9,7 @@ buildscript {
         bouncy_castle_version = "1.70"
         camerax_version = "1.2.0-alpha01"
         datastore_version = "1.0.0"
+        glide_version = "4.13.2"
         google_material_components_version = "1.6.1"
         google_play_services_ads_identifier_version = "17.1.0"
         google_play_services_location_version = "20.0.0"
@@ -81,7 +82,7 @@ android {
                 def flavor = variant.name
                 def versionName = variant.versionName
                 def versionCode = variant.versionCode
-                outputFileName = "${applicationId}_michoacan_${flavor}_${versionName}_V${versionCode}.apk"
+                outputFileName = "${applicationId}_harry_potter_${flavor}_${versionName}_V${versionCode}.apk"
             }
     }
 }
@@ -133,6 +134,10 @@ dependencies {
 
     //Timber
     implementation "com.jakewharton.timber:timber:$timber_version"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
 
 }
 
