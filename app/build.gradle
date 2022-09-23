@@ -19,6 +19,7 @@ buildscript {
         lifecycle_version = "2.4.1"
         logging_interceptor_version = "4.10.0"
         retrofit_version = "2.9.0"
+        timber_version = "5.0.1"
     }
 }
 
@@ -129,6 +130,9 @@ dependencies {
 
     // Material Components
     implementation "com.google.android.material:material:$google_material_components_version"
+
+    //Timber
+    implementation "com.jakewharton.timber:timber:$timber_version"
 
 }
 
