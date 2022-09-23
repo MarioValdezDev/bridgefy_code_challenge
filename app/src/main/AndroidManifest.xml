@@ -15,6 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HarryPotterApp"
+        android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,LockedOrientationActivity"
         tools:replace="android:allowBackup">
 
@@ -30,8 +31,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name=".home.presentation.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

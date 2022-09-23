@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.delay
-import mx.mariovaldez.harrypotterapp.MainActivity
+import mx.mariovaldez.harrypotterapp.home.presentation.HomeActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +17,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun launchSignIn() {
-        MainActivity.launch(this)
+        HomeActivity.launch(this)
         finish()
     }
 
