@@ -17,15 +17,21 @@
         android:theme="@style/Theme.HarryPotterApp"
         tools:ignore="AllowBackup,LockedOrientationActivity"
         tools:replace="android:allowBackup">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".splash.presentation.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SplashActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
